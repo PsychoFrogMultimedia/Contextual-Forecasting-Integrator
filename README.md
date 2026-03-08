@@ -1,4 +1,4 @@
-Contextual Forecasting Integrator (CFI) v0.2
+## Contextual Forecasting Integrator (CFI) v0.2
 
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -10,7 +10,7 @@ Continuous, context-weighted risk forecasting and adaptive steering middleware f
 CFI is the core forecasting & steering engine that powers EPIC v1.0 — the full epistemic governance architecture.
 
 
-Core Idea
+## Core Idea
 
 CFI runs continuously across turns:
 
@@ -26,7 +26,7 @@ Self-calibrates from outcome signals (closed-loop)
 No hard refusals by default — prefers steering over blocking.
 
 
-Features
+## Features
 
 Stateful multi-horizon forecasting (short: current turn, mid: exchange, far: cross-exchange drift)
 
@@ -43,7 +43,7 @@ Full telemetry output (forecast scores, band history, oscillation index, …)
 Designed for integration into prompt wrappers, inference loops, agent toolchains
 
 
-Related: EPIC v1.0 — Epistemic Predictive Integrity Core
+## Related: EPIC v1.0 — Epistemic Predictive Integrity Core
 
 CFI has been extended into a complete epistemic governor:
 
@@ -60,11 +60,12 @@ EPIC-truth-calibrated-architecture
 CFI remains the beating heart of its steering logic.
 
 
-Basic Usage
+## Basic Usage
 
 python
 
 from cfi.core import CFI
+
 
 # Initialize once (tune params to your tolerance / domain)
 
@@ -115,7 +116,7 @@ elif steering_band == 'abstain_cleanly':
 next_prev_state = new_state
 
 
-Status
+## Status
 
 Reference implementation + operational spec
 
@@ -124,12 +125,12 @@ Primary role: reliable steering layer inside EPIC
 Open for: bug reports, tuning suggestions, evaluation ideas, integration patterns
 
 
-License
+## License
 
 MIT
 
 
-Contributing
+## Contributing
 
 Issues, PRs, and discussions welcome — especially around:
 
