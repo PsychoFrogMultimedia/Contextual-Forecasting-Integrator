@@ -67,7 +67,7 @@ python
 from cfi.core import CFI
 
 
-# Initialize once (tune params to your tolerance / domain)
+## Initialize once (tune params to your tolerance / domain)
 
 cfi = CFI(
     params={
@@ -80,7 +80,7 @@ cfi = CFI(
 )
 
 
-# Per-turn call (stateful — pass previous state)
+## Per-turn call (stateful — pass previous state)
 
 user_prompt = "Current user message here"
 
@@ -95,7 +95,7 @@ steering_band, guidance, new_state = cfi(
 )
 
 
-# Act on the steering decision
+## Act on the steering decision
 
 if steering_band == 'normal':
     # proceed with normal generation
@@ -111,7 +111,7 @@ elif steering_band == 'abstain_cleanly':
     pass
 
 
-# Carry state forward
+## Carry state forward
 
 next_prev_state = new_state
 
