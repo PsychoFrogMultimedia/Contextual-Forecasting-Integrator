@@ -33,3 +33,7 @@ Evals on at least HarmBench/WildChat
 Updated docs
 
 Contact: DM on X @D_McMillan76
+
+## Related: EPIC (Epistemic Predictive Integrity Core)
+Full epistemic governor built on CFI principles:  
+https://github.com/PsychoFrogMultimedia/EPIC-truth-calibrated-architecture-
